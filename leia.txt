@@ -1,0 +1,26 @@
+Instalei o Linux Mint 20 em um notebook e tive um problema relacionado à bateria, pois não tem nenhum aviso quando está baixa e acaba desligando se não prestar atenção. No Windows eu tinha um programa instalado que apitava, mas não consegui achar um similar pro Linux.
+Então decidi fazer eu mesmo esse programa. Depois de algumas pesquisas, consegui chegar no resultado do vídeo abaixo.
+Ele inicia junto com o sistema operacional, fica monitorando a bateria e eu determinei que quando chegar a 15%, apareça uma notificação na tela, emitindo um som.
+Usei o Python como linguagem de programação e baixei um mp3 pra deixar na mesma pasta que o script .py.
+Para o programa iniciar com o sistema operacional, criei um arquivo de configuração que parece servir como um executável, apontando para o código que eu fiz.
+Para criar o arquivo:
+vim .config/autostart/monitor_bateria.desktop
+
+Conteúdo do arquivo:
+[Desktop Entry]
+Encoding=UTF-8
+Name=Monitor de bateria
+Comment=Emite um alerta quando a bateria está baixa
+Icon=gnome-info
+Exec=python3 /Endereço/completo/do/seu/script.py
+Terminal=false
+Type=Application
+Categories=
+
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=0
+#fim do conteúdo do arquivo
+
+Obs: "vim" é o editor de texto que eu gosto de usar. Vc que escolhe; A parte do "Exec" é como se vc estivesse dando o comando pra executar um programa qualquer em python
+
+O código está no repositório do Github: EndereçoDoRepositório
