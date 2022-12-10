@@ -23,4 +23,4 @@ X-GNOME-Autostart-Delay=0
 
 Obs: "vim" é o editor de texto que eu gosto de usar. Vc que escolhe; A parte do "Exec" é como se vc estivesse dando o comando pra executar um programa qualquer em python
 
-O código está no repositório do Github: EndereçoDoRepositório
+O código está no repositório do Github: https://github.com/alvaro220592/monitor_bateria
