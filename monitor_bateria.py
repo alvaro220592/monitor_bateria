@@ -1,5 +1,5 @@
 ## Este script é executado ao iniciar o sistema
-## O comando está em .config/autostart/monitor_bateria.desktop
+## O comando está em .config/autostart/monitor_bateria.desktop e seu conteúdo está descrito no arquivo leia.txt
 
 # certifique-se que tenha instalados esses módulos. Caso não tenha, execute no terminal: pip install nomeDoMóduloDesejado
 import psutil
